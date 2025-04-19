@@ -39,16 +39,16 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
 
 scene.add(ambientLight);
 
-const lightHelper = new THREE.PointLightHelper(light)
+// const lightHelper = new THREE.PointLightHelper(light)
 
-const gridHelpher = new THREE.GridHelper(200,50)
+// const gridHelpher = new THREE.GridHelper(200,50)
 
-scene.add(lightHelper,gridHelpher)
+// scene.add(lightHelper,gridHelpher)
 
 const controls = new OrbitControls(camera,renderer.domElement)
 
-const spaceTexture = new THREE.TextureLoader().load('/andro.jpg');
-scene.background = spaceTexture;
+// const spaceTexture = new THREE.TextureLoader().load('/andro.jpg');
+// scene.background = spaceTexture;
 
 
 function addStar () {
@@ -64,6 +64,9 @@ function addStar () {
   scene.add(star);
 
 }
+
+document.querySelector('#info').innerHTML = 'Hehe'
+
 
 Array(200).fill().forEach(addStar)
 
