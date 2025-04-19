@@ -65,7 +65,7 @@ function addStar () {
 
 }
 
-document.querySelector('#info').innerHTML = 'Hehe'
+document.querySelector('#info').innerHTML = 'Ansel Three JS'
 
 
 Array(200).fill().forEach(addStar)
